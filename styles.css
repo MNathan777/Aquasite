@@ -1,0 +1,103 @@
+:root {
+    --main-color: #0172B2;
+    --black: #fff;
+   --bg: #000000;
+   --border: 0.1rem solid rgba(255,255,255,0.3);
+    font-size: 18px;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear ;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+     background: var(--bg);
+    
+} 
+.cabecalho{
+    background: var(--bg);
+    color: var(--black);
+    position: relative;
+    z-index: 1;
+}
+
+ section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+    
+.header {
+   position: fixed;
+   top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.navbar a {
+  margin: 0 1rem;
+  font-size: 1.9rem;
+  color: #ffffff;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2.0rem;
+}
+
+.icons svg{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons svg:hover {
+   width: 60px;
+   height: 60px;
+}
+.btn {
+  background: var(--main-color);
+  color: #fffafa;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-top: 1rem;
+ display: inline-block;
+}
+.home-container {
+    background: url(./img/homefundo2.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+.home-container section {
+       display: flex;
+        align-items: center;
+        height: 90vh; 
+ }       
+
+ .content h3{
+    color: #fff;
+    font-size: 4rem;
+ }
+ .content p {
+    color: #fff;
+    font-size: 16px;
+    margin: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+ }
